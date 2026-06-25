@@ -1,0 +1,5040 @@
+<p>
+    &lt;!DOCTYPE html&gt;
+</p>
+<p>
+    &lt;html lang="id"&gt;
+</p>
+<p>
+    &lt;head&gt;
+</p>
+<p>
+      &lt;meta charset="UTF-8" /&gt;
+</p>
+<p>
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+</p>
+<p>
+      &lt;title&gt;KOPI UM | Koperasi Mahasiswa Universitas Mandiri&lt;/title&gt;
+</p>
+<p>
+      &lt;meta name="description" content="Website KOPI UM - Koperasi Mahasiswa Universitas Mandiri dengan desain premium, menu interaktif, galeri, game kecil, dan kontak resmi." /&gt;
+</p>
+<p>
+      &lt;style&gt;
+</p>
+<p>
+        :root{
+</p>
+<p>
+          --bg:#f7efe5;
+</p>
+<p>
+          --card:rgba(255,255,255,.78);
+</p>
+<p>
+          --coffee:#4c2f20;
+</p>
+<p>
+          --coffee2:#6f4630;
+</p>
+<p>
+          --gold:#c89a5a;
+</p>
+<p>
+          --gold2:#e1bf85;
+</p>
+<p>
+          --cream:#f5e7d6;
+</p>
+<p>
+          --text:#2a211b;
+</p>
+<p>
+          --muted:#71645a;
+</p>
+<p>
+          --line:rgba(76,47,32,.10);
+</p>
+<p>
+          --shadow:0 18px 45px rgba(76,47,32,.12);
+</p>
+<p>
+          --shadow2:0 24px 60px rgba(76,47,32,.18);
+</p>
+<p>
+          --radius:28px;
+</p>
+<p>
+          --radius2:36px;
+</p>
+<p>
+        }
+</p>
+<p>
+        *{box-sizing:border-box}
+</p>
+<p>
+        html{scroll-behavior:smooth}
+</p>
+<p>
+        body{
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+          font-family: Arial, Helvetica, sans-serif;
+</p>
+<p>
+          color:var(--text);
+</p>
+<p>
+          background:
+</p>
+<p>
+            radial-gradient(circle at top left, rgba(200,154,90,.18), transparent 20%),
+</p>
+<p>
+            radial-gradient(circle at 86% 10%, rgba(76,47,32,.10), transparent 18%),
+</p>
+<p>
+            linear-gradient(180deg, #fcf8f1 0%, var(--bg) 40%, #f5ede2 100%);
+</p>
+<p>
+          overflow-x:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        .container{
+</p>
+<p>
+          width:min(1180px, calc(100% - 32px));
+</p>
+<p>
+          margin:0 auto;
+</p>
+<p>
+        }
+</p>
+<p>
+        .topbar{
+</p>
+<p>
+          background:linear-gradient(90deg, rgba(76,47,32,.98), rgba(111,70,48,.96));
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          text-align:center;
+</p>
+<p>
+          padding:10px 16px;
+</p>
+<p>
+          font-size:.92rem;
+</p>
+<p>
+          letter-spacing:.3px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .nav{
+</p>
+<p>
+          position:sticky;
+</p>
+<p>
+          top:0;
+</p>
+<p>
+          z-index:60;
+</p>
+<p>
+          backdrop-filter: blur(16px);
+</p>
+<p>
+          background:rgba(255,250,244,.82);
+</p>
+<p>
+          border-bottom:1px solid rgba(76,47,32,.08);
+</p>
+<p>
+        }
+</p>
+<p>
+        .nav-inner{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          justify-content:space-between;
+</p>
+<p>
+          gap:16px;
+</p>
+<p>
+          padding:14px 0;
+</p>
+<p>
+        }
+</p>
+<p>
+        .brand{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          gap:12px;
+</p>
+<p>
+          text-decoration:none;
+</p>
+<p>
+          color:inherit;
+</p>
+<p>
+          min-width:max-content;
+</p>
+<p>
+        }
+</p>
+<p>
+        .brand-mark{
+</p>
+<p>
+          width:48px;
+</p>
+<p>
+          height:48px;
+</p>
+<p>
+          border-radius:16px;
+</p>
+<p>
+          background:linear-gradient(145deg, var(--coffee), #281812);
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          box-shadow:var(--shadow);
+</p>
+<p>
+          flex:none;
+</p>
+<p>
+        }
+</p>
+<p>
+        .brand-mark::before{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          inset:11px 13px 11px 13px;
+</p>
+<p>
+          border-radius:14px 14px 12px 12px;
+</p>
+<p>
+          background:linear-gradient(180deg, #f3d7b8 0%, #d8a66d 100%);
+</p>
+<p>
+          clip-path: polygon(18% 6%, 82% 6%, 94% 82%, 50% 100%, 6% 82%);
+</p>
+<p>
+          opacity:.98;
+</p>
+<p>
+        }
+</p>
+<p>
+        .brand-mark::after{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          left:19px;
+</p>
+<p>
+          top:12px;
+</p>
+<p>
+          width:10px;
+</p>
+<p>
+          height:16px;
+</p>
+<p>
+          border-radius:50%;
+</p>
+<p>
+          background:rgba(76,47,32,.38);
+</p>
+<p>
+          box-shadow: 6px 0 0 rgba(76,47,32,.30), -6px 0 0 rgba(76,47,32,.30);
+</p>
+<p>
+          transform:translateY(2px);
+</p>
+<p>
+          opacity:.72;
+</p>
+<p>
+        }
+</p>
+<p>
+        .brand-text{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          flex-direction:column;
+</p>
+<p>
+          line-height:1.05;
+</p>
+<p>
+        }
+</p>
+<p>
+        .brand-text strong{
+</p>
+<p>
+          font-size:1rem;
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          letter-spacing:.4px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .brand-text span{
+</p>
+<p>
+          font-size:.82rem;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+        }
+</p>
+<p>
+        .nav-links{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+          justify-content:flex-end;
+</p>
+<p>
+          gap:8px;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+        }
+</p>
+<p>
+        .nav-links a{
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          text-decoration:none;
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          font-size:.95rem;
+</p>
+<p>
+          padding:11px 14px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          border:1px solid transparent;
+</p>
+<p>
+          background:rgba(255,255,255,.18);
+</p>
+<p>
+          transition:.22s ease;
+</p>
+<p>
+          box-shadow:0 6px 18px rgba(76,47,32,.05);
+</p>
+<p>
+        }
+</p>
+<p>
+        .nav-links a::after{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          inset:0;
+</p>
+<p>
+          transform:translateX(-120%);
+</p>
+<p>
+          background:linear-gradient(120deg, transparent, rgba(255,255,255,.40), transparent);
+</p>
+<p>
+          transition:.6s ease;
+</p>
+<p>
+          pointer-events:none;
+</p>
+<p>
+        }
+</p>
+<p>
+        .nav-links a:hover{
+</p>
+<p>
+          transform:translateY(-3px) scale(1.02);
+</p>
+<p>
+          box-shadow:0 12px 26px rgba(76,47,32,.12);
+</p>
+<p>
+          border-color:rgba(76,47,32,.08);
+</p>
+<p>
+          background:rgba(255,255,255,.42);
+</p>
+<p>
+        }
+</p>
+<p>
+        .nav-links a:hover::after{transform:translateX(120%)}
+</p>
+<p>
+        .nav-links a.active{
+</p>
+<p>
+          background:linear-gradient(145deg, var(--coffee), var(--coffee2));
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          box-shadow:0 14px 28px rgba(76,47,32,.22);
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero{
+</p>
+<p>
+          padding:34px 0 18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-grid{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns: 1.18fr .82fr;
+</p>
+<p>
+          gap:24px;
+</p>
+<p>
+          align-items:stretch;
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-main{
+</p>
+<p>
+          border-radius:36px;
+</p>
+<p>
+          background:
+</p>
+<p>
+            linear-gradient(145deg, rgba(76,47,32,.98), rgba(104,66,45,.97));
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          box-shadow:var(--shadow2);
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          min-height:590px;
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.08);
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-main::before,
+</p>
+<p>
+        .hero-main::after{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          pointer-events:none;
+</p>
+<p>
+          border-radius:50%;
+</p>
+<p>
+          background:radial-gradient(circle, rgba(255,255,255,.14), transparent 62%);
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-main::before{
+</p>
+<p>
+          width:420px; height:420px;
+</p>
+<p>
+          right:-150px; top:-120px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-main::after{
+</p>
+<p>
+          width:300px; height:300px;
+</p>
+<p>
+          left:-110px; bottom:-120px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-inner{
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          z-index:1;
+</p>
+<p>
+          height:100%;
+</p>
+<p>
+          padding:38px;
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          flex-direction:column;
+</p>
+<p>
+          justify-content:space-between;
+</p>
+<p>
+        }
+</p>
+<p>
+        .eyebrow{
+</p>
+<p>
+          display:inline-flex;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          width:max-content;
+</p>
+<p>
+          padding:10px 14px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:rgba(255,255,255,.10);
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.12);
+</p>
+<p>
+          color:#f6eadc;
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          font-size:.88rem;
+</p>
+<p>
+          letter-spacing:.3px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero h1{
+</p>
+<p>
+          margin:18px 0 12px;
+</p>
+<p>
+          font-size:clamp(2.4rem, 5.2vw, 5rem);
+</p>
+<p>
+          line-height:1;
+</p>
+<p>
+          letter-spacing:-1.5px;
+</p>
+<p>
+          max-width:12ch;
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero p{
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+          font-size:1.03rem;
+</p>
+<p>
+          line-height:1.9;
+</p>
+<p>
+          color:rgba(255,255,255,.84);
+</p>
+<p>
+          max-width:68ch;
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-actions{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+          gap:12px;
+</p>
+<p>
+          margin-top:24px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .btn{
+</p>
+<p>
+          display:inline-flex;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          justify-content:center;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          padding:14px 18px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          text-decoration:none;
+</p>
+<p>
+          font-weight:900;
+</p>
+<p>
+          border:0;
+</p>
+<p>
+          cursor:pointer;
+</p>
+<p>
+          transition:.22s ease;
+</p>
+<p>
+          min-height:48px;
+</p>
+<p>
+          white-space:nowrap;
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        .btn::before{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          top:-40%;
+</p>
+<p>
+          left:-120%;
+</p>
+<p>
+          width:80px;
+</p>
+<p>
+          height:200%;
+</p>
+<p>
+          background:rgba(255,255,255,.24);
+</p>
+<p>
+          transform:rotate(24deg);
+</p>
+<p>
+          transition:.75s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .btn:hover::before{left:140%}
+</p>
+<p>
+        .btn.primary{
+</p>
+<p>
+          background:linear-gradient(145deg, var(--gold), #dcb173);
+</p>
+<p>
+          color:#2d1b12;
+</p>
+<p>
+          box-shadow:0 12px 24px rgba(200,154,90,.24);
+</p>
+<p>
+        }
+</p>
+<p>
+        .btn.primary:hover{
+</p>
+<p>
+          transform:translateY(-3px) scale(1.03);
+</p>
+<p>
+          box-shadow:0 18px 30px rgba(200,154,90,.35);
+</p>
+<p>
+        }
+</p>
+<p>
+        .btn.ghost{
+</p>
+<p>
+          background:rgba(255,255,255,.08);
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.18);
+</p>
+<p>
+        }
+</p>
+<p>
+        .btn.ghost:hover{
+</p>
+<p>
+          transform:translateY(-3px) scale(1.03);
+</p>
+<p>
+          background:rgba(255,255,255,.14);
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-stats{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:repeat(3,1fr);
+</p>
+<p>
+          gap:14px;
+</p>
+<p>
+          margin-top:24px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .stat{
+</p>
+<p>
+          background:rgba(255,255,255,.08);
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.12);
+</p>
+<p>
+          border-radius:24px;
+</p>
+<p>
+          padding:16px;
+</p>
+<p>
+          text-align:center;
+</p>
+<p>
+          backdrop-filter: blur(8px);
+</p>
+<p>
+          transition:.25s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .stat:hover{
+</p>
+<p>
+          transform:translateY(-4px);
+</p>
+<p>
+          background:rgba(255,255,255,.13);
+</p>
+<p>
+        }
+</p>
+<p>
+        .stat strong{
+</p>
+<p>
+          display:block;
+</p>
+<p>
+          font-size:1.25rem;
+</p>
+<p>
+          margin-bottom:4px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .stat span{
+</p>
+<p>
+          font-size:.85rem;
+</p>
+<p>
+          color:rgba(255,255,255,.82);
+</p>
+<p>
+        }
+</p>
+<p>
+        .hero-side{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          gap:18px;
+</p>
+<p>
+          min-height:590px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .card{
+</p>
+<p>
+          background:var(--card);
+</p>
+<p>
+          backdrop-filter: blur(14px);
+</p>
+<p>
+          border:1px solid rgba(76,47,32,.08);
+</p>
+<p>
+          border-radius:var(--radius);
+</p>
+<p>
+          box-shadow:var(--shadow);
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        .card.pad{padding:22px}
+</p>
+<p>
+        .card p{
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          line-height:1.8;
+</p>
+<p>
+        }
+</p>
+<p>
+        .coffee-illustration{
+</p>
+<p>
+          min-height:350px;
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          place-items:center;
+</p>
+<p>
+          padding:24px;
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          background:
+</p>
+<p>
+            linear-gradient(180deg, rgba(255,255,255,.76), rgba(247,238,226,.96));
+</p>
+<p>
+        }
+</p>
+<p>
+        .coffee-illustration::before{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          inset:auto 26px 20px 26px;
+</p>
+<p>
+          height:22px;
+</p>
+<p>
+          border-radius:50%;
+</p>
+<p>
+          background:rgba(76,47,32,.12);
+</p>
+<p>
+          filter:blur(12px);
+</p>
+<p>
+        }
+</p>
+<p>
+        .cup{
+</p>
+<p>
+          width:min(300px, 86%);
+</p>
+<p>
+          aspect-ratio: 3 / 4;
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          align-items:flex-end;
+</p>
+<p>
+          justify-content:center;
+</p>
+<p>
+          animation:floatCup 4.5s ease-in-out infinite;
+</p>
+<p>
+        }
+</p>
+<p>
+        @keyframes floatCup{
+</p>
+<p>
+          0%,100%{transform:translateY(0)}
+</p>
+<p>
+          50%{transform:translateY(-6px)}
+</p>
+<p>
+        }
+</p>
+<p>
+        .glass{
+</p>
+<p>
+          width:62%;
+</p>
+<p>
+          height:72%;
+</p>
+<p>
+          border-radius:24px 24px 28px 28px;
+</p>
+<p>
+          background:linear-gradient(180deg, rgba(255,255,255,.58), rgba(255,255,255,.20));
+</p>
+<p>
+          border:1px solid rgba(76,47,32,.14);
+</p>
+<p>
+          box-shadow: inset 0 0 0 1px rgba(255,255,255,.15);
+</p>
+<p>
+          backdrop-filter: blur(6px);
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        .coffee{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          left:0; right:0; bottom:0;
+</p>
+<p>
+          height:58%;
+</p>
+<p>
+          background:linear-gradient(180deg, #6b442e 0%, #402416 100%);
+</p>
+<p>
+          border-radius:0 0 24px 24px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .milk{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          left:0; right:0;
+</p>
+<p>
+          bottom:28%;
+</p>
+<p>
+          height:20%;
+</p>
+<p>
+          background:linear-gradient(180deg, #f2dcc0 0%, #d3ab7b 100%);
+</p>
+<p>
+          opacity:.93;
+</p>
+<p>
+        }
+</p>
+<p>
+        .ice{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          inset:14% 16% 34% 16%;
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:repeat(2,1fr);
+</p>
+<p>
+          gap:16px;
+</p>
+<p>
+          opacity:.55;
+</p>
+<p>
+        }
+</p>
+<p>
+        .cube{
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.28);
+</p>
+<p>
+          background:rgba(255,255,255,.20);
+</p>
+<p>
+          border-radius:10px;
+</p>
+<p>
+          transform:rotate(12deg);
+</p>
+<p>
+          animation:iceGlow 3s ease-in-out infinite;
+</p>
+<p>
+        }
+</p>
+<p>
+        .cube:nth-child(2n){transform:rotate(-8deg)}
+</p>
+<p>
+        @keyframes iceGlow{
+</p>
+<p>
+          0%,100%{opacity:.55; transform:translateY(0) rotate(12deg)}
+</p>
+<p>
+          50%{opacity:.85; transform:translateY(-2px) rotate(12deg)}
+</p>
+<p>
+        }
+</p>
+<p>
+        .straw{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          right:18%;
+</p>
+<p>
+          top:9%;
+</p>
+<p>
+          width:10px;
+</p>
+<p>
+          height:88%;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:linear-gradient(180deg, #f7d9a2 0%, #c48a54 100%);
+</p>
+<p>
+          transform:rotate(10deg);
+</p>
+<p>
+          box-shadow:0 0 0 1px rgba(255,255,255,.12);
+</p>
+<p>
+          animation:strawWiggle 3.6s ease-in-out infinite;
+</p>
+<p>
+          transform-origin:bottom center;
+</p>
+<p>
+        }
+</p>
+<p>
+        @keyframes strawWiggle{
+</p>
+<p>
+          0%,100%{transform:rotate(10deg)}
+</p>
+<p>
+          50%{transform:rotate(13deg)}
+</p>
+<p>
+        }
+</p>
+<p>
+        .straw::before{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          top:-20px;
+</p>
+<p>
+          left:-1px;
+</p>
+<p>
+          width:12px;
+</p>
+<p>
+          height:24px;
+</p>
+<p>
+          border-radius:8px 8px 3px 3px;
+</p>
+<p>
+          background:#d1a16b;
+</p>
+<p>
+          transform:rotate(6deg);
+</p>
+<p>
+        }
+</p>
+<p>
+        .cup-base{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          bottom:2%;
+</p>
+<p>
+          width:72%;
+</p>
+<p>
+          height:7%;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:linear-gradient(180deg, #2a1a11, #14100d);
+</p>
+<p>
+          opacity:.9;
+</p>
+<p>
+          box-shadow:0 14px 30px rgba(0,0,0,.18);
+</p>
+<p>
+        }
+</p>
+<p>
+        .cup-caption{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          bottom:18px;
+</p>
+<p>
+          left:18px;
+</p>
+<p>
+          right:18px;
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          justify-content:space-between;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          gap:12px;
+</p>
+<p>
+          font-size:.9rem;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+        }
+</p>
+<p>
+        .tag{
+</p>
+<p>
+          padding:8px 12px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:rgba(76,47,32,.08);
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          font-weight:800;
+</p>
+<p>
+        }
+</p>
+<p>
+        .mini-grid{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:1fr 1fr;
+</p>
+<p>
+          gap:18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .mini{
+</p>
+<p>
+          padding:20px;
+</p>
+<p>
+          min-height:110px;
+</p>
+<p>
+          transition:.25s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .mini:hover{
+</p>
+<p>
+          transform:translateY(-4px);
+</p>
+<p>
+          box-shadow:var(--shadow2);
+</p>
+<p>
+        }
+</p>
+<p>
+        .mini h3{
+</p>
+<p>
+          font-size:1.05rem;
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          margin:0 0 8px;
+</p>
+<p>
+        }
+</p>
+<p>
+        section{
+</p>
+<p>
+          padding:22px 0;
+</p>
+<p>
+        }
+</p>
+<p>
+        .section-title{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          align-items:end;
+</p>
+<p>
+          justify-content:space-between;
+</p>
+<p>
+          gap:18px;
+</p>
+<p>
+          margin-bottom:14px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .section-title h2{
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+          font-size:clamp(1.55rem, 2.7vw, 2.35rem);
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          letter-spacing:-.4px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .section-title p{
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          max-width:72ch;
+</p>
+<p>
+          line-height:1.8;
+</p>
+<p>
+        }
+</p>
+<p>
+        .grid-3{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:repeat(3,1fr);
+</p>
+<p>
+          gap:18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .icon-box{
+</p>
+<p>
+          width:54px;
+</p>
+<p>
+          height:54px;
+</p>
+<p>
+          border-radius:18px;
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          place-items:center;
+</p>
+<p>
+          background:rgba(76,47,32,.08);
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          margin-bottom:12px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .icon-box svg{width:26px;height:26px}
+</p>
+<p>
+        .feature h3{
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          margin:0 0 8px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .feature p{
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          line-height:1.8;
+</p>
+<p>
+        }
+</p>
+<p>
+        .two-col{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:1fr 1fr;
+</p>
+<p>
+          gap:18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-card{
+</p>
+<p>
+          padding:24px;
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-card::before{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          inset:auto -20% -40% auto;
+</p>
+<p>
+          width:220px;
+</p>
+<p>
+          height:220px;
+</p>
+<p>
+          background:radial-gradient(circle, rgba(200,154,90,.18), transparent 62%);
+</p>
+<p>
+          pointer-events:none;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-head{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          gap:12px;
+</p>
+<p>
+          margin-bottom:10px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-dot{
+</p>
+<p>
+          width:14px;
+</p>
+<p>
+          height:14px;
+</p>
+<p>
+          border-radius:50%;
+</p>
+<p>
+          background:var(--gold);
+</p>
+<p>
+          box-shadow:0 0 0 6px rgba(200,154,90,.18);
+</p>
+<p>
+          animation:pulseDot 2s infinite;
+</p>
+<p>
+        }
+</p>
+<p>
+        @keyframes pulseDot{
+</p>
+<p>
+          0%,100%{transform:scale(1)}
+</p>
+<p>
+          50%{transform:scale(1.12)}
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-head h3{
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          font-size:1.28rem;
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-list{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          margin-top:14px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-item{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          justify-content:space-between;
+</p>
+<p>
+          align-items:baseline;
+</p>
+<p>
+          gap:12px;
+</p>
+<p>
+          padding:11px 12px;
+</p>
+<p>
+          border-bottom:1px dashed rgba(76,47,32,.18);
+</p>
+<p>
+          border-radius:14px;
+</p>
+<p>
+          transition:.22s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-item:last-child{border-bottom:0}
+</p>
+<p>
+        .menu-item:hover{
+</p>
+<p>
+          background:rgba(76,47,32,.04);
+</p>
+<p>
+          transform:translateX(4px);
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-item .name{font-weight:850}
+</p>
+<p>
+        .menu-item .price{font-weight:900;color:var(--coffee2)}
+</p>
+<p>
+        .menu-item small{
+</p>
+<p>
+          display:block;
+</p>
+<p>
+          margin-top:2px;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          font-weight:500;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-filter{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          margin:14px 0 18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-filter button{
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          border:0;
+</p>
+<p>
+          cursor:pointer;
+</p>
+<p>
+          padding:11px 16px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:rgba(255,255,255,.72);
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          box-shadow:0 8px 18px rgba(76,47,32,.08);
+</p>
+<p>
+          transition:.22s ease;
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-filter button::before{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          top:0;
+</p>
+<p>
+          left:-120%;
+</p>
+<p>
+          width:70px;
+</p>
+<p>
+          height:100%;
+</p>
+<p>
+          background:rgba(255,255,255,.4);
+</p>
+<p>
+          transform:skewX(-20deg);
+</p>
+<p>
+          transition:.55s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-filter button:hover{
+</p>
+<p>
+          transform:translateY(-3px) scale(1.03);
+</p>
+<p>
+          box-shadow:0 12px 22px rgba(76,47,32,.12);
+</p>
+<p>
+        }
+</p>
+<p>
+        .menu-filter button:hover::before{left:130%}
+</p>
+<p>
+        .menu-filter button.active{
+</p>
+<p>
+          background:linear-gradient(145deg, var(--coffee), var(--coffee2));
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          box-shadow:0 14px 28px rgba(76,47,32,.22);
+</p>
+<p>
+        }
+</p>
+<p>
+        .badge-row{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          margin-top:12px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .badge{
+</p>
+<p>
+          padding:9px 12px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:rgba(76,47,32,.08);
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          font-size:.9rem;
+</p>
+<p>
+        }
+</p>
+<p>
+        .gallery{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:1.1fr .9fr 1fr;
+</p>
+<p>
+          gap:18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .photo{
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          min-height:250px;
+</p>
+<p>
+          border-radius:30px;
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+          box-shadow:var(--shadow);
+</p>
+<p>
+          background:linear-gradient(145deg, #d8ae7a, #7e5030);
+</p>
+<p>
+          transition:.28s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .photo:hover{
+</p>
+<p>
+          transform:translateY(-5px) scale(1.01);
+</p>
+<p>
+          box-shadow:var(--shadow2);
+</p>
+<p>
+        }
+</p>
+<p>
+        .photo.big{min-height:518px}
+</p>
+<p>
+        .photo .overlay{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          inset:0;
+</p>
+<p>
+          background:linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,.34));
+</p>
+<p>
+        }
+</p>
+<p>
+        .photo .label{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          left:18px;
+</p>
+<p>
+          bottom:18px;
+</p>
+<p>
+          z-index:1;
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          background:rgba(0,0,0,.22);
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.12);
+</p>
+<p>
+          padding:10px 14px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          backdrop-filter:blur(10px);
+</p>
+<p>
+        }
+</p>
+<p>
+        .art{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          inset:0;
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          place-items:center;
+</p>
+<p>
+          padding:22px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .art svg{
+</p>
+<p>
+          width:min(360px, 86%);
+</p>
+<p>
+          height:auto;
+</p>
+<p>
+          filter:drop-shadow(0 14px 24px rgba(0,0,0,.18));
+</p>
+<p>
+        }
+</p>
+<p>
+        .contact{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:1fr 1fr;
+</p>
+<p>
+          gap:18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .contact .card{padding:24px}
+</p>
+<p>
+        .contact-item{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          gap:14px;
+</p>
+<p>
+          align-items:flex-start;
+</p>
+<p>
+          padding:14px 0;
+</p>
+<p>
+          border-bottom:1px solid rgba(76,47,32,.10);
+</p>
+<p>
+        }
+</p>
+<p>
+        .contact-item:last-child{border-bottom:0}
+</p>
+<p>
+        .contact-item strong{display:block;color:var(--coffee)}
+</p>
+<p>
+        .contact-item span{display:block;margin-top:2px;color:var(--muted)}
+</p>
+<p>
+        .chip-row{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          margin-top:14px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .chip{
+</p>
+<p>
+          padding:9px 12px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:rgba(76,47,32,.08);
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          font-size:.9rem;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer{
+</p>
+<p>
+          padding:18px 0 42px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-note{
+</p>
+<p>
+          text-align:center;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          font-size:.94rem;
+</p>
+<p>
+          padding-top:6px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .floating{
+</p>
+<p>
+          position:fixed;
+</p>
+<p>
+          left:18px;
+</p>
+<p>
+          bottom:18px;
+</p>
+<p>
+          z-index:45;
+</p>
+<p>
+          max-width:300px;
+</p>
+<p>
+          background:rgba(255,250,244,.90);
+</p>
+<p>
+          border:1px solid rgba(76,47,32,.10);
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          border-radius:18px;
+</p>
+<p>
+          box-shadow:var(--shadow);
+</p>
+<p>
+          padding:12px 14px;
+</p>
+<p>
+          font-size:.92rem;
+</p>
+<p>
+          line-height:1.55;
+</p>
+<p>
+        }
+</p>
+<p>
+        .wa{
+</p>
+<p>
+          position:fixed;
+</p>
+<p>
+          right:18px;
+</p>
+<p>
+          bottom:18px;
+</p>
+<p>
+          z-index:50;
+</p>
+<p>
+          width:62px;
+</p>
+<p>
+          height:62px;
+</p>
+<p>
+          border-radius:50%;
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          place-items:center;
+</p>
+<p>
+          text-decoration:none;
+</p>
+<p>
+          color:white;
+</p>
+<p>
+          background:linear-gradient(145deg, #25d366, #1da851);
+</p>
+<p>
+          box-shadow:0 18px 40px rgba(29,168,81,.26);
+</p>
+<p>
+          font-size:30px;
+</p>
+<p>
+          font-weight:900;
+</p>
+<p>
+          animation:waFloat 2.8s ease-in-out infinite;
+</p>
+<p>
+        }
+</p>
+<p>
+        @keyframes waFloat{
+</p>
+<p>
+          0%,100%{transform:translateY(0)}
+</p>
+<p>
+          50%{transform:translateY(-5px)}
+</p>
+<p>
+        }
+</p>
+<p>
+        .reveal{
+</p>
+<p>
+          opacity:0;
+</p>
+<p>
+          transform:translateY(22px);
+</p>
+<p>
+          transition:opacity .7s ease, transform .7s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .reveal.show{
+</p>
+<p>
+          opacity:1;
+</p>
+<p>
+          transform:translateY(0);
+</p>
+<p>
+        }
+</p>
+<p>
+        .music{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          gap:12px;
+</p>
+<p>
+          margin-top:18px;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+        }
+</p>
+<p>
+        .music-btn{
+</p>
+<p>
+          border:0;
+</p>
+<p>
+          cursor:pointer;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          padding:12px 16px;
+</p>
+<p>
+          background:rgba(255,255,255,.10);
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          display:inline-flex;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          transition:.22s ease;
+</p>
+<p>
+          box-shadow:0 10px 22px rgba(0,0,0,.12);
+</p>
+<p>
+        }
+</p>
+<p>
+        .music-btn:hover{
+</p>
+<p>
+          transform:translateY(-3px);
+</p>
+<p>
+          background:rgba(255,255,255,.15);
+</p>
+<p>
+        }
+</p>
+<p>
+        .music-pill{
+</p>
+<p>
+          padding:10px 12px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:rgba(255,255,255,.08);
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.12);
+</p>
+<p>
+          font-size:.9rem;
+</p>
+<p>
+        }
+</p>
+<p>
+        .game{
+</p>
+<p>
+          padding:24px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .game-top{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          justify-content:space-between;
+</p>
+<p>
+          gap:16px;
+</p>
+<p>
+          align-items:flex-start;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+          margin-bottom:14px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .game-top h3{
+</p>
+<p>
+          margin:0 0 8px;
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          font-size:1.28rem;
+</p>
+<p>
+        }
+</p>
+<p>
+        .game-top p{
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          line-height:1.7;
+</p>
+<p>
+          max-width:58ch;
+</p>
+<p>
+        }
+</p>
+<p>
+        .game-metrics{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+        }
+</p>
+<p>
+        .metric{
+</p>
+<p>
+          min-width:92px;
+</p>
+<p>
+          background:rgba(76,47,32,.08);
+</p>
+<p>
+          border-radius:18px;
+</p>
+<p>
+          padding:12px 14px;
+</p>
+<p>
+          text-align:center;
+</p>
+<p>
+          border:1px solid rgba(76,47,32,.06);
+</p>
+<p>
+        }
+</p>
+<p>
+        .metric span{
+</p>
+<p>
+          display:block;
+</p>
+<p>
+          font-size:.78rem;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          margin-bottom:4px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .metric strong{
+</p>
+<p>
+          font-size:1.28rem;
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+        }
+</p>
+<p>
+        .game-stage{
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          height:260px;
+</p>
+<p>
+          border-radius:24px;
+</p>
+<p>
+          background:
+</p>
+<p>
+            radial-gradient(circle at 20% 20%, rgba(200,154,90,.18), transparent 22%),
+</p>
+<p>
+            radial-gradient(circle at 80% 20%, rgba(76,47,32,.08), transparent 18%),
+</p>
+<p>
+            linear-gradient(180deg, #fdf8f1 0%, #f3e7d8 100%);
+</p>
+<p>
+          border:1px solid rgba(76,47,32,.08);
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        .game-stage::before{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          inset:0;
+</p>
+<p>
+          background-image:
+</p>
+<p>
+            linear-gradient(rgba(76,47,32,.03) 1px, transparent 1px),
+</p>
+<p>
+            linear-gradient(90deg, rgba(76,47,32,.03) 1px, transparent 1px);
+</p>
+<p>
+          background-size:32px 32px;
+</p>
+<p>
+          opacity:.5;
+</p>
+<p>
+          pointer-events:none;
+</p>
+<p>
+        }
+</p>
+<p>
+        .game-badge{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          left:18px;
+</p>
+<p>
+          top:18px;
+</p>
+<p>
+          padding:10px 14px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:rgba(76,47,32,.08);
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+        }
+</p>
+<p>
+        .bean-target{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          width:44px;
+</p>
+<p>
+          height:32px;
+</p>
+<p>
+          border:0;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          background:linear-gradient(145deg, #6f4630, #2d1b12);
+</p>
+<p>
+          box-shadow:0 10px 18px rgba(76,47,32,.22);
+</p>
+<p>
+          cursor:pointer;
+</p>
+<p>
+          transition:transform .12s ease, left .25s ease, top .25s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .bean-target::before,
+</p>
+<p>
+        .bean-target::after{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          top:4px;
+</p>
+<p>
+          bottom:4px;
+</p>
+<p>
+          width:2px;
+</p>
+<p>
+          background:rgba(255,255,255,.18);
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .bean-target::before{left:15px}
+</p>
+<p>
+        .bean-target::after{right:15px}
+</p>
+<p>
+        .bean-target:hover{transform:scale(1.12)}
+</p>
+<p>
+        .bean-spark{
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          width:8px;
+</p>
+<p>
+          height:8px;
+</p>
+<p>
+          border-radius:50%;
+</p>
+<p>
+          background:var(--gold);
+</p>
+<p>
+          pointer-events:none;
+</p>
+<p>
+          animation:pop 600ms ease-out forwards;
+</p>
+<p>
+        }
+</p>
+<p>
+        @keyframes pop{
+</p>
+<p>
+          from{transform:scale(.6); opacity:1}
+</p>
+<p>
+          to{transform:scale(2.6); opacity:0}
+</p>
+<p>
+        }
+</p>
+<p>
+        .game-actions{
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          gap:10px;
+</p>
+<p>
+          flex-wrap:wrap;
+</p>
+<p>
+          margin-top:14px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .ghost-btn{
+</p>
+<p>
+          border:1px solid rgba(76,47,32,.12);
+</p>
+<p>
+          background:#fff;
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          padding:12px 16px;
+</p>
+<p>
+          border-radius:999px;
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          cursor:pointer;
+</p>
+<p>
+          transition:.2s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        .ghost-btn:hover{
+</p>
+<p>
+          transform:translateY(-3px);
+</p>
+<p>
+          background:rgba(76,47,32,.04);
+</p>
+<p>
+        }
+</p>
+<p>
+        .faq{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          gap:12px;
+</p>
+<p>
+        }
+</p>
+<p>
+        details{
+</p>
+<p>
+          background:var(--card);
+</p>
+<p>
+          border:1px solid rgba(76,47,32,.08);
+</p>
+<p>
+          border-radius:22px;
+</p>
+<p>
+          box-shadow:var(--shadow);
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        summary{
+</p>
+<p>
+          list-style:none;
+</p>
+<p>
+          cursor:pointer;
+</p>
+<p>
+          padding:18px 20px;
+</p>
+<p>
+          font-weight:850;
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          display:flex;
+</p>
+<p>
+          align-items:center;
+</p>
+<p>
+          justify-content:space-between;
+</p>
+<p>
+          gap:14px;
+</p>
+<p>
+        }
+</p>
+<p>
+        summary::-webkit-details-marker{display:none}
+</p>
+<p>
+        summary::after{
+</p>
+<p>
+          content:"+";
+</p>
+<p>
+          width:34px;
+</p>
+<p>
+          height:34px;
+</p>
+<p>
+          border-radius:50%;
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          place-items:center;
+</p>
+<p>
+          background:rgba(76,47,32,.08);
+</p>
+<p>
+          flex:none;
+</p>
+<p>
+          transition:.2s ease;
+</p>
+<p>
+        }
+</p>
+<p>
+        details[open] summary::after{content:"–"}
+</p>
+<p>
+        details .faq-body{
+</p>
+<p>
+          padding:0 20px 18px;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          line-height:1.8;
+</p>
+<p>
+        }
+</p>
+<p>
+        .testimonials{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:repeat(3,1fr);
+</p>
+<p>
+          gap:18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .quote-card{
+</p>
+<p>
+          padding:22px;
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+        }
+</p>
+<p>
+        .quote-card::before{
+</p>
+<p>
+          content:"“";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          top:10px;
+</p>
+<p>
+          right:18px;
+</p>
+<p>
+          font-size:4rem;
+</p>
+<p>
+          color:rgba(76,47,32,.08);
+</p>
+<p>
+          line-height:1;
+</p>
+<p>
+        }
+</p>
+<p>
+        .quote-card p{
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          line-height:1.8;
+</p>
+<p>
+          margin:0 0 18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .quote-card strong{
+</p>
+<p>
+          color:var(--coffee);
+</p>
+<p>
+          display:block;
+</p>
+<p>
+        }
+</p>
+<p>
+        .quote-card span{
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          font-size:.9rem;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-card{
+</p>
+<p>
+          background:linear-gradient(145deg, rgba(76,47,32,.98), rgba(104,66,45,.97));
+</p>
+<p>
+          color:#fff;
+</p>
+<p>
+          border-radius:36px;
+</p>
+<p>
+          padding:28px;
+</p>
+<p>
+          box-shadow:var(--shadow2);
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.08);
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          overflow:hidden;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-card::before{
+</p>
+<p>
+          content:"";
+</p>
+<p>
+          position:absolute;
+</p>
+<p>
+          width:360px;
+</p>
+<p>
+          height:360px;
+</p>
+<p>
+          border-radius:50%;
+</p>
+<p>
+          right:-140px;
+</p>
+<p>
+          top:-140px;
+</p>
+<p>
+          background:radial-gradient(circle, rgba(255,255,255,.11), transparent 65%);
+</p>
+<p>
+          pointer-events:none;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-grid{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          grid-template-columns:1.2fr .8fr;
+</p>
+<p>
+          gap:24px;
+</p>
+<p>
+          align-items:start;
+</p>
+<p>
+          position:relative;
+</p>
+<p>
+          z-index:1;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-card h2{
+</p>
+<p>
+          margin:0 0 10px;
+</p>
+<p>
+          font-size:clamp(1.8rem, 3vw, 2.6rem);
+</p>
+<p>
+          letter-spacing:-.4px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-card p{
+</p>
+<p>
+          color:rgba(255,255,255,.84);
+</p>
+<p>
+          line-height:1.9;
+</p>
+<p>
+          margin:0;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-list{
+</p>
+<p>
+          display:grid;
+</p>
+<p>
+          gap:12px;
+</p>
+<p>
+          margin-top:16px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-list div{
+</p>
+<p>
+          background:rgba(255,255,255,.08);
+</p>
+<p>
+          border:1px solid rgba(255,255,255,.12);
+</p>
+<p>
+          padding:12px 14px;
+</p>
+<p>
+          border-radius:18px;
+</p>
+<p>
+        }
+</p>
+<p>
+        .footer-list strong{display:block;margin-bottom:4px}
+</p>
+<p>
+        .footer-list span{color:rgba(255,255,255,.78)}
+</p>
+<p>
+        .copyright{
+</p>
+<p>
+          text-align:center;
+</p>
+<p>
+          color:var(--muted);
+</p>
+<p>
+          padding:16px 0 6px;
+</p>
+<p>
+          font-size:.92rem;
+</p>
+<p>
+        }
+</p>
+<p>
+        @media (max-width: 1080px){
+</p>
+<p>
+          .hero-grid,
+</p>
+<p>
+          .gallery,
+</p>
+<p>
+          .contact,
+</p>
+<p>
+          .testimonials,
+</p>
+<p>
+          .footer-grid{grid-template-columns:1fr}
+</p>
+<p>
+          .hero-main{min-height:auto}
+</p>
+<p>
+          .hero-side{min-height:auto}
+</p>
+<p>
+          .grid-3,
+</p>
+<p>
+          .two-col,
+</p>
+<p>
+          .mini-grid{grid-template-columns:1fr}
+</p>
+<p>
+          .hero-stats{grid-template-columns:1fr}
+</p>
+<p>
+          .nav-inner{flex-direction:column; align-items:flex-start}
+</p>
+<p>
+          .nav-links{justify-content:flex-start}
+</p>
+<p>
+          .gallery .photo.big{min-height:420px}
+</p>
+<p>
+        }
+</p>
+<p>
+        @media (max-width: 560px){
+</p>
+<p>
+          .hero-inner,
+</p>
+<p>
+          .menu-card,
+</p>
+<p>
+          .contact .card,
+</p>
+<p>
+          .card.pad,
+</p>
+<p>
+          .game,
+</p>
+<p>
+          .footer-card{padding:18px}
+</p>
+<p>
+          .hero h1{max-width:none}
+</p>
+<p>
+          .btn{width:100%}
+</p>
+<p>
+          .hero-actions{flex-direction:column}
+</p>
+<p>
+          .floating{display:none}
+</p>
+<p>
+          .wa{width:58px;height:58px;font-size:28px}
+</p>
+<p>
+          .brand-text span{max-width:220px}
+</p>
+<p>
+          .game-stage{height:220px}
+</p>
+<p>
+        }
+</p>
+<p>
+      &lt;/style&gt;
+</p>
+<p>
+    &lt;/head&gt;
+</p>
+<p>
+    &lt;body&gt;
+</p>
+<p>
+      &lt;div class="topbar"&gt;KOPI UM — Koperasi Mahasiswa Universitas Mandiri&lt;/div&gt;
+</p>
+<p>
+      &lt;div class="nav"&gt;
+</p>
+<p>
+        &lt;div class="container nav-inner"&gt;
+</p>
+<p>
+          &lt;a class="brand" href="#beranda"&gt;
+</p>
+<p>
+            &lt;div class="brand-mark" aria-hidden="true"&gt;&lt;/div&gt;
+</p>
+<p>
+            &lt;div class="brand-text"&gt;
+</p>
+<p>
+              &lt;strong&gt;KOPI UM&lt;/strong&gt;
+</p>
+<p>
+              &lt;span&gt;Koperasi Mahasiswa Universitas Mandiri&lt;/span&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/a&gt;
+</p>
+<p>
+          &lt;div class="nav-links" id="navLinks"&gt;
+</p>
+<p>
+            &lt;a href="#beranda" class="active"&gt;Beranda&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#tentang"&gt;Tentang&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#filosofi"&gt;Filosofi&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#usaha"&gt;Unit Usaha&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#menu"&gt;Menu&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#galeri"&gt;Galeri&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#testimoni"&gt;Testimoni&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#game"&gt;Game&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#faq"&gt;FAQ&lt;/a&gt;
+</p>
+<p>
+            &lt;a href="#kontak"&gt;Kontak&lt;/a&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/div&gt;
+</p>
+<p>
+      &lt;/div&gt;
+</p>
+<p>
+      &lt;main class="container"&gt;
+</p>
+<p>
+        &lt;section class="hero" id="beranda"&gt;
+</p>
+<p>
+          &lt;div class="hero-grid"&gt;
+</p>
+<p>
+            &lt;article class="hero-main reveal"&gt;
+</p>
+<p>
+              &lt;div class="hero-inner"&gt;
+</p>
+<p>
+                &lt;div&gt;
+</p>
+<p>
+                  &lt;span class="eyebrow"&gt;☕ Koperasi • Kewirausahaan • Kopi UM&lt;/span&gt;
+</p>
+<p>
+                  &lt;h1&gt;Wadah Mahasiswa untuk Berkarya dan Mandiri&lt;/h1&gt;
+</p>
+<p>
+                  &lt;p&gt;
+</p>
+<p>
+                    KOPI UM adalah unit usaha milik Koperasi Mahasiswa Universitas Mandiri yang hadir sebagai ruang
+</p>
+<p>
+                    belajar, berorganisasi, dan berwirausaha. Dibuat lebih hidup, lebih elegan, dan lebih enak dilihat
+</p>
+<p>
+                    di HP maupun laptop.
+</p>
+<p>
+                  &lt;/p&gt;
+</p>
+<p>
+                  &lt;div class="hero-actions"&gt;
+</p>
+<p>
+                    &lt;a class="btn primary" href="#menu"&gt;Lihat Menu&lt;/a&gt;
+</p>
+<p>
+                    &lt;a class="btn ghost" href="#game"&gt;Main Game&lt;/a&gt;
+</p>
+<p>
+                    &lt;a class="btn ghost" href="#kontak"&gt;Hubungi Kami&lt;/a&gt;
+</p>
+<p>
+                  &lt;/div&gt;
+</p>
+<p>
+                  &lt;div class="music"&gt;
+</p>
+<p>
+                    &lt;button class="music-btn" id="musicBtn" type="button"&gt;▶ Putar Suara&lt;/button&gt;
+</p>
+<p>
+                    &lt;span class="music-pill" id="musicState"&gt;Suara mati&lt;/span&gt;
+</p>
+<p>
+                  &lt;/div&gt;
+</p>
+<p>
+                &lt;/div&gt;
+</p>
+<p>
+                &lt;div class="hero-stats"&gt;
+</p>
+<p>
+                  &lt;div class="stat"&gt;&lt;strong id="count1"&gt;1&lt;/strong&gt;&lt;span&gt;Wadah usaha mahasiswa&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                  &lt;div class="stat"&gt;&lt;strong id="count2"&gt;10&lt;/strong&gt;&lt;span&gt;Menu utama&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                  &lt;div class="stat"&gt;&lt;strong id="count3"&gt;100&lt;/strong&gt;&lt;span&gt;Semangat kebersamaan&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+            &lt;div class="hero-side"&gt;
+</p>
+<p>
+              &lt;div class="card coffee-illustration reveal"&gt;
+</p>
+<p>
+                &lt;div class="cup" aria-hidden="true"&gt;
+</p>
+<p>
+                  &lt;div class="glass"&gt;
+</p>
+<p>
+                    &lt;div class="coffee"&gt;&lt;/div&gt;
+</p>
+<p>
+                    &lt;div class="milk"&gt;&lt;/div&gt;
+</p>
+<p>
+                    &lt;div class="ice"&gt;
+</p>
+<p>
+                      &lt;div class="cube"&gt;&lt;/div&gt;
+</p>
+<p>
+                      &lt;div class="cube"&gt;&lt;/div&gt;
+</p>
+<p>
+                      &lt;div class="cube"&gt;&lt;/div&gt;
+</p>
+<p>
+                      &lt;div class="cube"&gt;&lt;/div&gt;
+</p>
+<p>
+                    &lt;/div&gt;
+</p>
+<p>
+                    &lt;div class="straw"&gt;&lt;/div&gt;
+</p>
+<p>
+                  &lt;/div&gt;
+</p>
+<p>
+                  &lt;div class="cup-base"&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;/div&gt;
+</p>
+<p>
+                &lt;div class="cup-caption"&gt;
+</p>
+<p>
+                  &lt;span class="tag"&gt;Es Kopi Favorit&lt;/span&gt;
+</p>
+<p>
+                  &lt;span&gt;Sentuhan premium untuk halaman depan&lt;/span&gt;
+</p>
+<p>
+                &lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+              &lt;div class="mini-grid"&gt;
+</p>
+<p>
+                &lt;div class="card mini reveal"&gt;
+</p>
+<p>
+                  &lt;h3&gt;Desain Hangat&lt;/h3&gt;
+</p>
+<p>
+                  &lt;p&gt;Cokelat, krem, dan gold dipakai supaya tampilan terasa mewah dan bersih.&lt;/p&gt;
+</p>
+<p>
+                &lt;/div&gt;
+</p>
+<p>
+                &lt;div class="card mini reveal"&gt;
+</p>
+<p>
+                  &lt;h3&gt;Animasi Hidup&lt;/h3&gt;
+</p>
+<p>
+                  &lt;p&gt;Tombol, kartu, dan elemen bergerak halus saat disentuh maupun saat scroll.&lt;/p&gt;
+</p>
+<p>
+                &lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="tentang" class="reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;Tentang KOPI UM&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;
+</p>
+<p>
+                KOPI UM adalah unit usaha yang dikelola oleh Koperasi Mahasiswa Universitas Mandiri
+</p>
+<p>
+                sebagai sarana belajar kewirausahaan, pelayanan, dan pengembangan usaha mahasiswa.
+</p>
+<p>
+              &lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="grid-3"&gt;
+</p>
+<p>
+            &lt;article class="card pad feature"&gt;
+</p>
+<p>
+              &lt;div class="icon-box" aria-hidden="true"&gt;
+</p>
+<p>
+                &lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"&gt;
+</p>
+<p>
+                  &lt;path d="M12 2l7 7-7 13L5 9l7-7Z"/&gt;
+</p>
+<p>
+                &lt;/svg&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+              &lt;h3&gt;Visi&lt;/h3&gt;
+</p>
+<p>
+              &lt;p&gt;Menjadi unit usaha mahasiswa yang profesional, mandiri, inovatif, dan berdaya saing.&lt;/p&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+            &lt;article class="card pad feature"&gt;
+</p>
+<p>
+              &lt;div class="icon-box" aria-hidden="true"&gt;
+</p>
+<p>
+                &lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"&gt;
+</p>
+<p>
+                  &lt;path d="M6 12l4 4 8-8"/&gt;
+</p>
+<p>
+                  &lt;path d="M4 6h16"/&gt;
+</p>
+<p>
+                  &lt;path d="M4 18h16"/&gt;
+</p>
+<p>
+                &lt;/svg&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+              &lt;h3&gt;Misi&lt;/h3&gt;
+</p>
+<p>
+              &lt;p&gt;Mengembangkan jiwa kewirausahaan mahasiswa, melatih pelayanan, dan membangun usaha berkelanjutan.&lt;/p&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+            &lt;article class="card pad feature"&gt;
+</p>
+<p>
+              &lt;div class="icon-box" aria-hidden="true"&gt;
+</p>
+<p>
+                &lt;svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"&gt;
+</p>
+<p>
+                  &lt;path d="M12 2l2.7 6.2L21 11l-6 3.8L15.7 21 12 16.8 8.3 21 9 14.8 3 11l6.3-2.8L12 2Z"/&gt;
+</p>
+<p>
+                &lt;/svg&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+              &lt;h3&gt;Nilai&lt;/h3&gt;
+</p>
+<p>
+              &lt;p&gt;Kebersamaan, kejujuran, kerja keras, dan manfaat untuk mahasiswa Universitas Mandiri.&lt;/p&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="filosofi" class="reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;Filosofi Singkat&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;Bagian ini bisa dipakai untuk menjelaskan makna Kopi UM sebagai brand kampus.&lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="two-col"&gt;
+</p>
+<p>
+            &lt;article class="card pad"&gt;
+</p>
+<p>
+              &lt;h3 style="color:var(--coffee); margin:0 0 10px"&gt;Makna Brand&lt;/h3&gt;
+</p>
+<p>
+              &lt;p&gt;
+</p>
+<p>
+                &lt;strong style="color:var(--coffee)"&gt;Kopi&lt;/strong&gt; melambangkan energi, kehangatan, dan semangat memulai hari.
+</p>
+<p>
+                &lt;br&gt;&lt;br&gt;
+</p>
+<p>
+                &lt;strong style="color:var(--coffee)"&gt;UM&lt;/strong&gt; menegaskan identitas Universitas Mandiri sebagai rumah besar mahasiswa.
+</p>
+<p>
+                &lt;br&gt;&lt;br&gt;
+</p>
+<p>
+                &lt;strong style="color:var(--coffee)"&gt;KOPI UM&lt;/strong&gt; berarti ruang usaha yang sederhana, dekat dengan mahasiswa, dan bisa berkembang bersama.
+</p>
+<p>
+              &lt;/p&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+            &lt;article class="card pad"&gt;
+</p>
+<p>
+              &lt;h3 style="color:var(--coffee); margin:0 0 10px"&gt;Makna untuk Website&lt;/h3&gt;
+</p>
+<p>
+              &lt;p&gt;
+</p>
+<p>
+                Tampilan dibuat hangat, elegan, dan modern supaya cocok sebagai website organisasi sekaligus brand usaha.
+</p>
+<p>
+                Semua tombol, kartu, dan panel dirancang agar terasa lebih hidup saat disentuh.
+</p>
+<p>
+              &lt;/p&gt;
+</p>
+<p>
+              &lt;div class="badge-row"&gt;
+</p>
+<p>
+                &lt;span class="badge"&gt;KOPI UM&lt;/span&gt;
+</p>
+<p>
+                &lt;span class="badge"&gt;Koperasi Mahasiswa&lt;/span&gt;
+</p>
+<p>
+                &lt;span class="badge"&gt;Universitas Mandiri&lt;/span&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="usaha" class="reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;Unit Usaha&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;Bagian menu dibuat dengan kotak rapi supaya tetap bagus walaupun tidak memakai gambar produk.&lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="two-col"&gt;
+</p>
+<p>
+            &lt;article class="card menu-card"&gt;
+</p>
+<p>
+              &lt;div class="menu-head"&gt;&lt;span class="menu-dot"&gt;&lt;/span&gt;&lt;h3&gt;Kopi UM&lt;/h3&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;p&gt;Unit usaha minuman yang dikelola oleh KOPMA-UM sebagai bentuk praktik kewirausahaan mahasiswa.&lt;/p&gt;
+</p>
+<p>
+              &lt;div class="menu-list"&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Robusta Coffee&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp10.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Mix Coffee&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp10.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Arabica Coffee&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp12.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Gula Aren Coffee&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp10.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+            &lt;article class="card menu-card"&gt;
+</p>
+<p>
+              &lt;div class="menu-head"&gt;&lt;span class="menu-dot"&gt;&lt;/span&gt;&lt;h3&gt;Non-Coffee &amp; Snack&lt;/h3&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;div class="menu-list"&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Matcha&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp13.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Cokelat&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp13.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Taekwan Medium&lt;/span&gt;&lt;small&gt;isi 3&lt;/small&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp8.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Taekwan Large&lt;/span&gt;&lt;small&gt;isi 6&lt;/small&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp13.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Pempek Satuan&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp5.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item"&gt;&lt;div&gt;&lt;span class="name"&gt;Pempek Paket&lt;/span&gt;&lt;small&gt;isi 3&lt;/small&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp15.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="menu" class="reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;Menu Tampilan Modern&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;Pilih kategori untuk melihat menu dengan lebih cepat.&lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="menu-filter" id="menuFilter"&gt;
+</p>
+<p>
+            &lt;button data-cat="all" class="active"&gt;Semua&lt;/button&gt;
+</p>
+<p>
+            &lt;button data-cat="kopi"&gt;Kopi&lt;/button&gt;
+</p>
+<p>
+            &lt;button data-cat="lain"&gt;Non-Kopi&lt;/button&gt;
+</p>
+<p>
+            &lt;button data-cat="snack"&gt;Snack&lt;/button&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="two-col"&gt;
+</p>
+<p>
+            &lt;article class="card menu-card"&gt;
+</p>
+<p>
+              &lt;div class="menu-head"&gt;&lt;span class="menu-dot"&gt;&lt;/span&gt;&lt;h3&gt;KOPI&lt;/h3&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;div class="menu-list"&gt;
+</p>
+<p>
+                &lt;div class="menu-item kopi"&gt;&lt;div&gt;&lt;span class="name"&gt;Robusta Coffee&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp10.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item kopi"&gt;&lt;div&gt;&lt;span class="name"&gt;Mix Coffee&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp10.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item kopi"&gt;&lt;div&gt;&lt;span class="name"&gt;Arabica Coffee&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp12.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item kopi"&gt;&lt;div&gt;&lt;span class="name"&gt;Gula Aren Coffee&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp10.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+            &lt;article class="card menu-card"&gt;
+</p>
+<p>
+              &lt;div class="menu-head"&gt;&lt;span class="menu-dot"&gt;&lt;/span&gt;&lt;h3&gt;NON-KOPI &amp; SNACK&lt;/h3&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;div class="menu-list"&gt;
+</p>
+<p>
+                &lt;div class="menu-item lain"&gt;&lt;div&gt;&lt;span class="name"&gt;Matcha&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp13.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item lain"&gt;&lt;div&gt;&lt;span class="name"&gt;Cokelat&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp13.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item snack"&gt;&lt;div&gt;&lt;span class="name"&gt;Taekwan Medium&lt;/span&gt;&lt;small&gt;isi 3&lt;/small&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp8.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item snack"&gt;&lt;div&gt;&lt;span class="name"&gt;Taekwan Large&lt;/span&gt;&lt;small&gt;isi 6&lt;/small&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp13.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item snack"&gt;&lt;div&gt;&lt;span class="name"&gt;Pempek Satuan&lt;/span&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp5.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="menu-item snack"&gt;&lt;div&gt;&lt;span class="name"&gt;Pempek Paket&lt;/span&gt;&lt;small&gt;isi 3&lt;/small&gt;&lt;/div&gt;&lt;span class="price"&gt;Rp15.000&lt;/span&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="galeri" class="reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;Galeri Dokumentasi&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;Ruang untuk dokumentasi kegiatan, produk, dan momen kebersamaan KOPI UM.&lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="gallery"&gt;
+</p>
+<p>
+            &lt;div class="photo"&gt;
+</p>
+<p>
+              &lt;div class="overlay"&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;div class="label"&gt;Dokumentasi Rapat&lt;/div&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+            &lt;div class="photo big"&gt;
+</p>
+<p>
+              &lt;div class="overlay"&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;div class="label"&gt;Foto Produk&lt;/div&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+            &lt;div class="photo"&gt;
+</p>
+<p>
+              &lt;div class="overlay"&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;div class="label"&gt;Kegiatan Event&lt;/div&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="testimoni" class="reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;Testimoni&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;Beberapa kesan singkat dari pengunjung dan tim KOPI UM.&lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="testimonials"&gt;
+</p>
+<p>
+            &lt;article class="card quote-card"&gt;
+</p>
+<p>
+              &lt;p&gt;Menu KOPI UM terlihat rapi, sederhana, dan enak dibaca. Cocok untuk branding kampus.&lt;/p&gt;
+</p>
+<p>
+              &lt;strong&gt;Mahasiswa&lt;/strong&gt;
+</p>
+<p>
+              &lt;span&gt;Pengunjung&lt;/span&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+            &lt;article class="card quote-card"&gt;
+</p>
+<p>
+              &lt;p&gt;Warna dan tampilannya terasa premium. Website ini pas untuk organisasi sekaligus usaha.&lt;/p&gt;
+</p>
+<p>
+              &lt;strong&gt;Pengurus KOPMA&lt;/strong&gt;
+</p>
+<p>
+              &lt;span&gt;Tim internal&lt;/span&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+            &lt;article class="card quote-card"&gt;
+</p>
+<p>
+              &lt;p&gt;Halamannya menarik dan interaktif. Ada nuansa modern yang bikin betah dilihat.&lt;/p&gt;
+</p>
+<p>
+              &lt;strong&gt;Pengguna&lt;/strong&gt;
+</p>
+<p>
+              &lt;span&gt;Penikmat kopi&lt;/span&gt;
+</p>
+<p>
+            &lt;/article&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="game" class="reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;Mini Game Kopi&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;Coba kejar biji kopi yang bergerak untuk menambah skor.&lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="card game"&gt;
+</p>
+<p>
+            &lt;div class="game-top"&gt;
+</p>
+<p>
+              &lt;div&gt;
+</p>
+<p>
+                &lt;h3&gt;Tangkap Biji Kopi&lt;/h3&gt;
+</p>
+<p>
+                &lt;p&gt;Mainkan game kecil ini untuk menambah keseruan saat membuka halaman.&lt;/p&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+              &lt;div class="game-metrics"&gt;
+</p>
+<p>
+                &lt;div class="metric"&gt;&lt;span&gt;Skor&lt;/span&gt;&lt;strong id="score"&gt;0&lt;/strong&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="metric"&gt;&lt;span&gt;Waktu&lt;/span&gt;&lt;strong id="time"&gt;30&lt;/strong&gt;&lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+            &lt;div class="game-stage" id="stage"&gt;
+</p>
+<p>
+              &lt;div class="game-badge" id="gameStatus"&gt;Siap dimainkan&lt;/div&gt;
+</p>
+<p>
+              &lt;button class="bean-target" id="bean" type="button" aria-label="Biji kopi"&gt;&lt;/button&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+            &lt;div class="game-actions"&gt;
+</p>
+<p>
+              &lt;button class="ghost-btn" id="startGame" type="button"&gt;Mulai Game&lt;/button&gt;
+</p>
+<p>
+              &lt;button class="ghost-btn" id="resetGame" type="button"&gt;Reset&lt;/button&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="faq" class="reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;FAQ&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;Pertanyaan yang sering muncul tentang KOPI UM.&lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="faq"&gt;
+</p>
+<p>
+            &lt;details&gt;
+</p>
+<p>
+              &lt;summary&gt;Menu KOPI UM bisa diganti nanti?&lt;/summary&gt;
+</p>
+<p>
+              &lt;div class="faq-body"&gt;Bisa. Tinggal ubah isi menu sesuai kebutuhan tanpa merombak desain utama.&lt;/div&gt;
+</p>
+<p>
+            &lt;/details&gt;
+</p>
+<p>
+            &lt;details&gt;
+</p>
+<p>
+              &lt;summary&gt;Kalau mau pakai foto asli bagaimana?&lt;/summary&gt;
+</p>
+<p>
+              &lt;div class="faq-body"&gt;Tinggal ganti bagian gambar dengan foto yang kamu punya agar tampilannya lebih personal.&lt;/div&gt;
+</p>
+<p>
+            &lt;/details&gt;
+</p>
+<p>
+            &lt;details&gt;
+</p>
+<p>
+              &lt;summary&gt;Website ini cocok untuk HP?&lt;/summary&gt;
+</p>
+<p>
+              &lt;div class="faq-body"&gt;Cocok. Tampilan dibuat responsif supaya nyaman dibuka di HP maupun laptop.&lt;/div&gt;
+</p>
+<p>
+            &lt;/details&gt;
+</p>
+<p>
+            &lt;details&gt;
+</p>
+<p>
+              &lt;summary&gt;Suara latar bisa dimatikan?&lt;/summary&gt;
+</p>
+<p>
+              &lt;div class="faq-body"&gt;Bisa. Tombol suara di bagian hero dapat digunakan untuk play dan pause.&lt;/div&gt;
+</p>
+<p>
+            &lt;/details&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+        &lt;section id="kontak" class="footer reveal"&gt;
+</p>
+<p>
+          &lt;div class="section-title"&gt;
+</p>
+<p>
+            &lt;div&gt;
+</p>
+<p>
+              &lt;h2&gt;Kontak&lt;/h2&gt;
+</p>
+<p>
+              &lt;p&gt;Bagian ini bisa dipakai untuk informasi resmi dan tautan pemesanan.&lt;/p&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="footer-card"&gt;
+</p>
+<p>
+            &lt;div class="footer-grid"&gt;
+</p>
+<p>
+              &lt;div&gt;
+</p>
+<p>
+                &lt;h2&gt;KOPI UM&lt;/h2&gt;
+</p>
+<p>
+                &lt;p&gt;
+</p>
+<p>
+                  KOPI UM hadir sebagai ruang belajar, berkarya, dan berwirausaha.
+</p>
+<p>
+                  Dengan semangat kebersamaan, KOPI UM berkomitmen untuk terus berkembang dan memberi manfaat.
+</p>
+<p>
+                &lt;/p&gt;
+</p>
+<p>
+                &lt;div class="divider" style="background:linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);"&gt;&lt;/div&gt;
+</p>
+<p>
+                &lt;div class="footer-list"&gt;
+</p>
+<p>
+                  &lt;div&gt;
+</p>
+<p>
+                    &lt;strong&gt;Instagram&lt;/strong&gt;
+</p>
+<p>
+                    &lt;span&gt;@koperasi_mahasiswa&lt;/span&gt;
+</p>
+<p>
+                  &lt;/div&gt;
+</p>
+<p>
+                  &lt;div&gt;
+</p>
+<p>
+                    &lt;strong&gt;WhatsApp&lt;/strong&gt;
+</p>
+<p>
+                    &lt;span&gt;+62 895-1299-7789&lt;/span&gt;
+</p>
+<p>
+                  &lt;/div&gt;
+</p>
+<p>
+                  &lt;div&gt;
+</p>
+<p>
+                    &lt;strong&gt;Lokasi&lt;/strong&gt;
+</p>
+<p>
+                    &lt;span&gt;Kampus Universitas Mandiri&lt;/span&gt;
+</p>
+<p>
+                  &lt;/div&gt;
+</p>
+<p>
+                &lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+              &lt;div&gt;
+</p>
+<p>
+                &lt;div class="chip-row" style="margin-top:0"&gt;
+</p>
+<p>
+                  &lt;span class="chip"&gt;KOPI UM&lt;/span&gt;
+</p>
+<p>
+                  &lt;span class="chip"&gt;Koperasi Mahasiswa&lt;/span&gt;
+</p>
+<p>
+                  &lt;span class="chip"&gt;Universitas Mandiri&lt;/span&gt;
+</p>
+<p>
+                  &lt;span class="chip"&gt;Subang&lt;/span&gt;
+</p>
+<p>
+                &lt;/div&gt;
+</p>
+<p>
+              &lt;/div&gt;
+</p>
+<p>
+            &lt;/div&gt;
+</p>
+<p>
+          &lt;/div&gt;
+</p>
+<p>
+          &lt;div class="copyright"&gt;© 2026 KOPI UM — Koperasi Mahasiswa Universitas Mandiri&lt;/div&gt;
+</p>
+<p>
+        &lt;/section&gt;
+</p>
+<p>
+      &lt;/main&gt;
+</p>
+<p>
+      &lt;a class="wa" href="https://wa.me/6289512997789" target="_blank" rel="noopener" aria-label="Chat WhatsApp"&gt;💬&lt;/a&gt;
+</p>
+<p>
+      &lt;div class="floating"&gt;
+</p>
+<p>
+        Web dibuat agar tetap elegan, ringan, dan mudah dipindahkan ke Google Sites atau file HTML.
+</p>
+<p>
+      &lt;/div&gt;
+</p>
+<p>
+      &lt;script&gt;
+</p>
+<p>
+        const observer = new IntersectionObserver((entries) =&gt; {
+</p>
+<p>
+          entries.forEach(entry =&gt; {
+</p>
+<p>
+            if (entry.isIntersecting) entry.target.classList.add('show');
+</p>
+<p>
+          });
+</p>
+<p>
+        }, { threshold: 0.12 });
+</p>
+<p>
+        document.querySelectorAll('.reveal').forEach(el =&gt; observer.observe(el));
+</p>
+<p>
+        const navLinks = Array.from(document.querySelectorAll('#navLinks a'));
+</p>
+<p>
+        const sections = navLinks.map(a =&gt; document.querySelector(a.getAttribute('href'))).filter(Boolean);
+</p>
+<p>
+        const activeObserver = new IntersectionObserver((entries) =&gt; {
+</p>
+<p>
+          entries.forEach(entry =&gt; {
+</p>
+<p>
+            if (entry.isIntersecting) {
+</p>
+<p>
+              navLinks.forEach(a =&gt; a.classList.remove('active'));
+</p>
+<p>
+              const current = navLinks.find(a =&gt; a.getAttribute('href') === '#' + entry.target.id);
+</p>
+<p>
+              if (current) current.classList.add('active');
+</p>
+<p>
+            }
+</p>
+<p>
+          });
+</p>
+<p>
+        }, { threshold: 0.35 });
+</p>
+<p>
+        sections.forEach(sec =&gt; activeObserver.observe(sec));
+</p>
+<p>
+        function animateCounter(el, end, duration){
+</p>
+<p>
+          let start = 0;
+</p>
+<p>
+          const timer = setInterval(() =&gt; {
+</p>
+<p>
+            start += 1;
+</p>
+<p>
+            el.textContent = start;
+</p>
+<p>
+            if (start &gt;= end) clearInterval(timer);
+</p>
+<p>
+          }, Math.max(10, Math.floor(duration / end)));
+</p>
+<p>
+        }
+</p>
+<p>
+        animateCounter(document.getElementById('count1'), 1, 350);
+</p>
+<p>
+        animateCounter(document.getElementById('count2'), 10, 900);
+</p>
+<p>
+        animateCounter(document.getElementById('count3'), 100, 1200);
+</p>
+<p>
+        let audioCtx = null;
+</p>
+<p>
+        let nodes = null;
+</p>
+<p>
+        let musicOn = false;
+</p>
+<p>
+        const musicBtn = document.getElementById('musicBtn');
+</p>
+<p>
+        const musicState = document.getElementById('musicState');
+</p>
+<p>
+        function startAmbience() {
+</p>
+<p>
+          if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+</p>
+<p>
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+</p>
+<p>
+          const master = audioCtx.createGain();
+</p>
+<p>
+          master.gain.value = 0.03;
+</p>
+<p>
+          master.connect(audioCtx.destination);
+</p>
+<p>
+          const osc1 = audioCtx.createOscillator();
+</p>
+<p>
+          const gain1 = audioCtx.createGain();
+</p>
+<p>
+          osc1.type = 'sine';
+</p>
+<p>
+          osc1.frequency.value = 82;
+</p>
+<p>
+          gain1.gain.value = 0.38;
+</p>
+<p>
+          osc1.connect(gain1).connect(master);
+</p>
+<p>
+          osc1.start();
+</p>
+<p>
+          const osc2 = audioCtx.createOscillator();
+</p>
+<p>
+          const gain2 = audioCtx.createGain();
+</p>
+<p>
+          osc2.type = 'triangle';
+</p>
+<p>
+          osc2.frequency.value = 220;
+</p>
+<p>
+          gain2.gain.value = 0.05;
+</p>
+<p>
+          osc2.connect(gain2).connect(master);
+</p>
+<p>
+          osc2.start();
+</p>
+<p>
+          const lfo = audioCtx.createOscillator();
+</p>
+<p>
+          const lfoGain = audioCtx.createGain();
+</p>
+<p>
+          lfo.type = 'sine';
+</p>
+<p>
+          lfo.frequency.value = 0.08;
+</p>
+<p>
+          lfoGain.gain.value = 0.012;
+</p>
+<p>
+          lfo.connect(lfoGain).connect(master.gain);
+</p>
+<p>
+          lfo.start();
+</p>
+<p>
+          nodes = { osc1, osc2, lfo, master };
+</p>
+<p>
+        }
+</p>
+<p>
+        function stopAmbience() {
+</p>
+<p>
+          if (!nodes || !audioCtx) return;
+</p>
+<p>
+          const now = audioCtx.currentTime;
+</p>
+<p>
+          nodes.master.gain.cancelScheduledValues(now);
+</p>
+<p>
+          nodes.master.gain.setTargetAtTime(0, now, 0.08);
+</p>
+<p>
+          setTimeout(() =&gt; {
+</p>
+<p>
+            try { nodes.osc1.stop(); } catch(e) {}
+</p>
+<p>
+            try { nodes.osc2.stop(); } catch(e) {}
+</p>
+<p>
+            try { nodes.lfo.stop(); } catch(e) {}
+</p>
+<p>
+            try { nodes.osc1.disconnect(); nodes.osc2.disconnect(); nodes.lfo.disconnect(); nodes.master.disconnect(); } catch(e) {}
+</p>
+<p>
+            nodes = null;
+</p>
+<p>
+          }, 180);
+</p>
+<p>
+        }
+</p>
+<p>
+        musicBtn.addEventListener('click', () =&gt; {
+</p>
+<p>
+          musicOn = !musicOn;
+</p>
+<p>
+          if (musicOn) {
+</p>
+<p>
+            startAmbience();
+</p>
+<p>
+            musicBtn.textContent = '⏸ Pause Suara';
+</p>
+<p>
+            musicState.textContent = 'Suara aktif';
+</p>
+<p>
+          } else {
+</p>
+<p>
+            stopAmbience();
+</p>
+<p>
+            musicBtn.textContent = '▶ Putar Suara';
+</p>
+<p>
+            musicState.textContent = 'Suara mati';
+</p>
+<p>
+          }
+</p>
+<p>
+        });
+</p>
+<p>
+        const gameStage = document.getElementById('stage');
+</p>
+<p>
+        const bean = document.getElementById('bean');
+</p>
+<p>
+        const scoreEl = document.getElementById('score');
+</p>
+<p>
+        const timeEl = document.getElementById('time');
+</p>
+<p>
+        const gameStatus = document.getElementById('gameStatus');
+</p>
+<p>
+        const startGameBtn = document.getElementById('startGame');
+</p>
+<p>
+        const resetGameBtn = document.getElementById('resetGame');
+</p>
+<p>
+        let score = 0;
+</p>
+<p>
+        let timeLeft = 30;
+</p>
+<p>
+        let gameTimer = null;
+</p>
+<p>
+        let moveTimer = null;
+</p>
+<p>
+        let gameRunning = false;
+</p>
+<p>
+        function moveBean() {
+</p>
+<p>
+          const rect = gameStage.getBoundingClientRect();
+</p>
+<p>
+          const maxX = Math.max(20, rect.width - 60);
+</p>
+<p>
+          const maxY = Math.max(20, rect.height - 50);
+</p>
+<p>
+          const x = Math.random() * maxX;
+</p>
+<p>
+          const y = Math.random() * maxY;
+</p>
+<p>
+          bean.style.left = `${x}px`;
+</p>
+<p>
+          bean.style.top = `${y}px`;
+</p>
+<p>
+        }
+</p>
+<p>
+        function spark(x, y) {
+</p>
+<p>
+          const dot = document.createElement('div');
+</p>
+<p>
+          dot.className = 'bean-spark';
+</p>
+<p>
+          dot.style.left = `${x}px`;
+</p>
+<p>
+          dot.style.top = `${y}px`;
+</p>
+<p>
+          gameStage.appendChild(dot);
+</p>
+<p>
+          setTimeout(() =&gt; dot.remove(), 650);
+</p>
+<p>
+        }
+</p>
+<p>
+        function startGame() {
+</p>
+<p>
+          if (gameRunning) return;
+</p>
+<p>
+          gameRunning = true;
+</p>
+<p>
+          score = 0;
+</p>
+<p>
+          timeLeft = 30;
+</p>
+<p>
+          scoreEl.textContent = score;
+</p>
+<p>
+          timeEl.textContent = timeLeft;
+</p>
+<p>
+          gameStatus.textContent = 'Berlangsung';
+</p>
+<p>
+          moveBean();
+</p>
+<p>
+          gameTimer = setInterval(() =&gt; {
+</p>
+<p>
+            timeLeft--;
+</p>
+<p>
+            timeEl.textContent = timeLeft;
+</p>
+<p>
+            if (timeLeft &lt;= 0) {
+</p>
+<p>
+              clearInterval(gameTimer);
+</p>
+<p>
+              clearInterval(moveTimer);
+</p>
+<p>
+              gameRunning = false;
+</p>
+<p>
+              gameStatus.textContent = `Selesai — skor ${score}`;
+</p>
+<p>
+              bean.style.left = '50%';
+</p>
+<p>
+              bean.style.top = '50%';
+</p>
+<p>
+              bean.style.transform = 'translate(-50%, -50%) scale(1)';
+</p>
+<p>
+            }
+</p>
+<p>
+          }, 1000);
+</p>
+<p>
+          moveTimer = setInterval(() =&gt; {
+</p>
+<p>
+            if (gameRunning) moveBean();
+</p>
+<p>
+          }, 950);
+</p>
+<p>
+        }
+</p>
+<p>
+        function resetGame() {
+</p>
+<p>
+          clearInterval(gameTimer);
+</p>
+<p>
+          clearInterval(moveTimer);
+</p>
+<p>
+          score = 0;
+</p>
+<p>
+          timeLeft = 30;
+</p>
+<p>
+          gameRunning = false;
+</p>
+<p>
+          scoreEl.textContent = score;
+</p>
+<p>
+          timeEl.textContent = timeLeft;
+</p>
+<p>
+          gameStatus.textContent = 'Siap dimainkan';
+</p>
+<p>
+          bean.style.left = '24px';
+</p>
+<p>
+          bean.style.top = '90px';
+</p>
+<p>
+          bean.style.transform = 'none';
+</p>
+<p>
+        }
+</p>
+<p>
+        bean.addEventListener('click', (e) =&gt; {
+</p>
+<p>
+          if (!gameRunning) return;
+</p>
+<p>
+          score++;
+</p>
+<p>
+          scoreEl.textContent = score;
+</p>
+<p>
+          const rect = gameStage.getBoundingClientRect();
+</p>
+<p>
+          spark(e.offsetX + bean.offsetLeft, e.offsetY + bean.offsetTop);
+</p>
+<p>
+          moveBean();
+</p>
+<p>
+        });
+</p>
+<p>
+        startGameBtn.addEventListener('click', startGame);
+</p>
+<p>
+        resetGameBtn.addEventListener('click', resetGame);
+</p>
+<p>
+        const menuFilter = document.getElementById('menuFilter');
+</p>
+<p>
+        const menuItems = document.querySelectorAll('#menu .menu-item');
+</p>
+<p>
+        menuFilter.addEventListener('click', (e) =&gt; {
+</p>
+<p>
+          if (e.target.tagName !== 'BUTTON') return;
+</p>
+<p>
+          menuFilter.querySelectorAll('button').forEach(b =&gt; b.classList.remove('active'));
+</p>
+<p>
+          e.target.classList.add('active');
+</p>
+<p>
+          const cat = e.target.dataset.cat;
+</p>
+<p>
+          menuItems.forEach(item =&gt; {
+</p>
+<p>
+            const show = cat === 'all' || item.classList.contains(cat);
+</p>
+<p>
+            item.style.display = show ? 'flex' : 'none';
+</p>
+<p>
+          });
+</p>
+<p>
+        });
+</p>
+<p>
+        resetGame();
+</p>
+<p>
+      &lt;/script&gt;
+</p>
+<p>
+    &lt;/body&gt;
+</p>
+<p>
+    &lt;/html&gt;
+</p>
